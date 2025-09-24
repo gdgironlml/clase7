@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "380453275477",
+    "project_id": "parcial-e440e",
+    "storage_bucket": "parcial-e440e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380453275477:android:9b09687a2e1802085751dc",
+        "android_client_info": {
+          "package_name": "com.example.clase7"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3DqsZw5c8qe5KPswRRAZ7BebmDZGj-FU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
