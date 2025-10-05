@@ -3,43 +3,61 @@
     <string name="app_name">Clase</string>
     <string name="login_screen_text">Iniciar sesión</string>
     <string name="login_screen_login_button">Iniciar sesión</string>
+    <string name="placeholder_text"> "" </string>
     <string name="login_screen_register_button">No tienes cuenta ? crea una acá</string>
-    <string name="email_required">El email es requerido</string>
-    <string name="invalid_email">El email es invalido</string>
-    <string name="password_required">La contraseña es requerida</string>
-    <string name="invalid_password">El password debe tener al menos 6 caracteres</string>
-
 
     <string name="register_screen_text">Crea tu cuenta</string>
     <string name="register_screen_register_button">Crear cuenta</string>
+    <string name="register_screen_success">Registro Exitoso</string>
+    <string name="register_screen_password_error">Las contraseñas no coinciden</string>
 
     <string name="fields_email">Correo electrónico</string>
     <string name="fields_password">Contraseña</string>
     <string name="fields_confirm_password">Confirmar contraseña</string>
-    <string name="Register_succesfull">Registro exitoso</string>
-
 
     <string name="login_screen_success">Inicio de sesion correcto</string>
     <string name="login_screen_fail">Fallo el inicio de sesion</string>
-    <string name="login_screen_validation_email_empty">El correo es requerido</string>
+    <string name="login_screen_to_users">Ir a usuarios</string>
+
+    <string name="user_screen_new_user">Nuevo usuario</string>
+    <string name="user_screen_tittle">Usuarios</string>
+
+    <string name="user_form_screen_save">Guardar</string>
+
+    <string name="screen_login">login</string>
+    <string name="screen_register">register</string>
+    <string name="screen_log_success">logSuccess</string>
+    <string name="screen_users">users</string>
+    <string name="screen_users_form">users_form</string>
+
+    <string name="login_screen_validation_email_empty">El email es requerido</string>
+    <string name="login_screen_validation_email_invalid">El email es invalido</string>
+    <string name="login_screen_validation_password_empty">El password es requerido</string>
+    <string name="login_screen_validation_password_invalid">El password debe tener al menos 6 caracteres</string>
 
     <string name="user_form_screen_email">Email</string>
 
-    <string name="go_to_users_button">Ir a usuarios</string>
+    <string name="content_description_icon_exit">Icon register</string>
+    <string name="content_description_icon_person">User icon</string>
+    <string name="content_description_icon_email">Email icon</string>
+    <string name="content_description_icon_password">Password icon</string>
+    <string name="content_description_icon_confirm_password">Confirm password icon</string>
+    <string name="content_description_icon_add">Add icon</string>
+    <string name="registe_screen_register_not_allowed">Registro no Permitido</string>
 
-    <string name="new_user_button_text">Nuevo usuario</string>
-    <string name="fields_roles">Roles</string>
-    <string name="save_user_button_text">Guardar</string>
-    <string name="saved_user_messaje">Usuario guardado exitosamente</string>
-    <string name="error_saving_user">Error al guardar el usuario: </string>
-
-
-
-    // Recursos para navegacion entre pantallas
-    <string name="route_login">login</string>
-    <string name="route_register">register</string>
-    <string name="route_logsuccess">logSuccess</string>
-    <string name="route_users">users</string>
-    <string name="route_users_form">users_form</string>
+    <!-- Report Screen Strings -->
+    <string name="report_screen_title">Crear Informe</string>
+    <string name="report_screen_header">Informe Catedrático</string>
+    <string name="report_field_course">Curso</string>
+    <string name="report_field_year">Año</string>
+    <string name="report_field_semester">Semestre</string>
+    <string name="report_field_date">Fecha (ej. YYYY-MM-DD)</string>
+    <string name="report_field_comments">Comentarios</string>
+    <string name="report_button_attach">Adjuntar Archivos</string>
+    <string name="report_label_attached">Adjunto: %1$s</string>
+    <string name="report_button_save">Guardar Informe</string>
+    <string name="report_toast_attaching">Abriendo selector de archivos</string>
+    <string name="report_toast_saved">Informe guardado (simulación)</string>
+    <string name="content_description_icon_back">Volver</string>
 
 </resources>

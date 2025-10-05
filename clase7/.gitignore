@@ -1,23 +1,15 @@
-# Archivos de la IDE y del sistema
-.idea/
-.gradle/
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
 .DS_Store
-
-# Archivos de build y de salida
 /build
 /captures
-.cxx/
-*.apk
-*.aab
-*.aar
-*.iml
-
-# Clases y archivos de caché
-.cxx/
-.externalNativeBuild/
-*/gradle-wrapper.jar
-
-# Configuración local y privada
+.externalNativeBuild
+.cxx
 local.properties
-google-services.json
-secrets.properties

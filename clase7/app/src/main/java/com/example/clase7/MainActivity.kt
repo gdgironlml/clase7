@@ -10,16 +10,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.stringResource
-import com.example.clase7.ui.theme.Clase7Theme
+import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.clase7.screens.LoginScreen
-import com.example.clase7.screens.RegisterScreen
-import com.example.clase7.screens.SuccessScreen
-import com.example.clase7.screens.UserScreen
-import com.example.clase7.screens.UsersFormScreen
+import com.example.clase7.ui.theme.Clase7Theme
 import com.google.firebase.Firebase
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.auth
@@ -46,31 +41,34 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+const val SCREEN_LOGIN = "login"
+const val SCREEN_REGISTER = "register"
+const val SCREEN_HOME = "home"
+const val SCREEN_USERS = "users"
+const val SCREEN_USERS_FORM = "users_form"
+
 @Composable
 fun MainScreens() {
-    // Para la navegacion
-    val navController = rememberNavController()
-    val routeLogin = stringResource(R.string.route_login)
-    val routeRegister = stringResource(R.string.route_register)
-    val routeSuccess = stringResource(R.string.route_logsuccess)
-    val routeUsers = stringResource(R.string.route_users)
-    val routeUsersForm = stringResource(R.string.route_users_form)
 
-    var initialScreen: String = "login"
+    val context = LocalContext.current
+
+    val navController = rememberNavController()
+
+    var initialScreen: String = SCREEN_LOGIN
 
     val auth = Firebase.auth
     val currentUser = auth.currentUser
 
     if (currentUser != null){
-        initialScreen = routeUsers
+        initialScreen = SCREEN_HOME
     }
 
     NavHost(navController = navController, startDestination = initialScreen) {
-        composable(routeLogin) { LoginScreen(navController) }
-        composable(routeRegister) { RegisterScreen(navController) }
-        composable(routeSuccess) { SuccessScreen(navController) }
-        composable(routeUsers) { UserScreen(navController) }
-        composable(routeUsersForm){ UsersFormScreen(navController) }
+        composable(SCREEN_LOGIN) { LoginScreen(navController) }
+        composable(SCREEN_REGISTER) { RegisterScreen(navController) }
+        composable(SCREEN_HOME) { HomeScreen(navController) }
+        composable(SCREEN_USERS) {UserScreen(navController)}
+        composable(SCREEN_USERS_FORM) {UsersFormScreen(navController)}
     }
 }
 
